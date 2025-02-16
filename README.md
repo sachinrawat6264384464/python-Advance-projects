@@ -4,7 +4,7 @@
 --> working: i am using we user time module and random module and two while loop one for play game or exit. other for paly game only  in this first turen or user and second turne of computer both of them i ma using user define function  and only user give command for stop the game computer will not give this is very intresting
 # 2. HOTEL MANAGEMENT SYSTEM
 
-Your project is a real-life Café Management System that uses Python and MySQL with the mysql.connector module. It interacts with a MySQL database to store and manage the café's menu, allowing customers to place orders and generate bills.
+my project is a real-life Café Management System that uses Python and MySQL with the mysql.connector module. It interacts with a MySQL database to store and manage the café's menu, allowing customers to place orders and generate bills.
 
 How It Works:
 1.The system performs SQL queries to fetch, insert, create, and delete data from the MySQL database.
