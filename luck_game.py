@@ -43,8 +43,8 @@ while True:
             elif role3==role2 and role3!=role1:
                 print(f"{role1} | {role2} | {role3}\n")
                 print(f"🚫you are very close to winning but you lose {amount1}")
-                balanc=balance[0]-int(amount1)
-                balance=balanc
+                balanc-=(amount1)
+                
             elif role3==role1 and role3!=role2:
                 print(f"{role1} | {role2} | {role3}\n")
                 print(f"🔴you are very close to winning but you lose {amount1}")
