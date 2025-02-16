@@ -1,25 +1,59 @@
 import time
-list1=[{"1.ques":"how is the prime minister  of india ","A":"matma gandhi","B":"narendra singh tomar","C":"yogi","D":"modi"},{"2.ques":"which fild releted to this softwere enginears","A":"IT","B":"mechanical","C":"civil","D":"hotel"}]
-answer=["D","A"]
-print("you have only 10 seconds time for every question!")
 
-command=input("command type start = ").lower()
-if command=="start":
- while True:
-    price=10000
-    index=0
-    for i in list1,answer:
-        print("--------welcome to conbanega cororpai----------")
-        print(list1[index])
-        print()
-        user=input("choice your answer A,B,C,D = ").upper()
-        if user==answer[index]:
-           print(f"✅correct answer you win price = {price} ")
-           
-           price=price+20000
-           index+=1
-           time.sleep(10)
+# List of questions with options
+questions = [
+    {
+        "ques": "Who is the Prime Minister of India?",
+        "A": "Mahatma Gandhi",
+        "B": "Narendra Singh Tomar",
+        "C": "Yogi Adityanath",
+        "D": "Narendra Modi"
+    },
+    {
+        "ques": "Which field is related to Software Engineers?",
+        "A": "IT",
+        "B": "Mechanical",
+        "C": "Civil",
+        "D": "Hotel Management"
+    }
+]
+
+# Correct answers
+answers = ["D", "A"]
+
+print("You have only **10 seconds** to answer each question!")
+
+# Start game
+command = input("Type 'start' to begin: ").lower()
+if command == "start":
+    prize = 10000
+    index = 0
+
+    for i in range(len(questions)):  # Loop through all questions
+        print("\n-------- Welcome to Kaun Banega Crorepati --------")
+        print(f"Q{index + 1}: {questions[i]['ques']}")
+        
+        # Display options
+        for key, value in questions[i].items():
+            if key != "ques":
+                print(f"{key}: {value}")
+
+        start_time = time.time()  # Start timer
+        user_answer = input("Choose your answer (A, B, C, D): ").upper()
+        end_time = time.time()  # End timer
+
+        # Check time limit
+        if end_time - start_time > 10:
+            print("⏳ Time's up! You took too long to answer.")
+            break
+
+        # Check answer
+        if user_answer == answers[i]:
+            print(f"✅ Correct! You win ₹{prize}!")
+            prize += 20000
+            index += 1
         else:
-            print(" ❌you select a wrong answer")
-    if index==2:
-       break
+            print("❌ Wrong answer! Game over.")
+            break
+
+    print("\n🎉 Thank you for playing! Your total prize money is: ₹", prize)
