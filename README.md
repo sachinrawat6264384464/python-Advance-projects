@@ -25,7 +25,8 @@ How It Works:
 5.It simulates a real café environment, where waiters (referred to as "better" in the program) take orders and process payments.
 
 # 3. LIBRARY MANAGEMENT SYSTEM
-# working: This Python script implements a Library Management System that allows three types of users—teachers, students, and administrators—to log in and perform various tasks related to books. The system interacts with a MySQL database using the mysql.connector library and utilizes bcrypt for password hashing and authentication.
+# working: 
+This Python script implements a Library Management System that allows three types of users—teachers, students, and administrators—to log in and perform various tasks related to books. The system interacts with a MySQL database using the mysql.connector library and utilizes bcrypt for password hashing and authentication.
 Main Components & Functionality:
 1. User Authentication & Role-Based Access. 2. Teacher Login & Operations. 3. Student Login & Operations. 4. Admin Login & Privileges. 5. Database Connectivity & Queries
 # 4. CONTACT APP
