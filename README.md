@@ -141,3 +141,18 @@ If the file does not exist, it shows an error.
 
 Stops the program execution.
 
+# 8. Tic-Tac-Toe
+Working of the Game
+This is a two-player Tic-Tac-Toe game where Player X and Player O take turns to place their marks on a 3x3 grid. The game runs until:
+✅ A player wins by forming a row, column, or diagonal.
+🔄 It's a draw (when all 9 positions are filled and no one wins).
+
+What’s Used in the Game?
+Lists (board) – Represents the game board.
+print_board() function – Displays the current state of the board.
+check_winner() function – Checks if a player has won.
+valid_move() function – Ensures a move is valid and prevents overwriting.
+Loop for turns – Alternates between Player X and Player O.
+Win/Draw condition handling – Stops the game if someone wins or if it's a draw.
+
+
