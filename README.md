@@ -155,7 +155,7 @@ valid_move() function – Ensures a move is valid and prevents overwriting.
 Loop for turns – Alternates between Player X and Player O.
 Win/Draw condition handling – Stops the game if someone wins or if it's a draw.
 
-# 9. TOO DO LIST SYSTEM
+# 9. TO DO LIST SYSTEM
 # Working of the To-Do List Using MySQL Database
 This is a task management system where users can create, add, update, delete, and view tasks. The system uses a MySQL database to store and manage tasks efficiently.
 
