@@ -38,7 +38,7 @@ The Contact Diary App is a Python-based application that allows users to store, 
 
 3️⃣ Error Handling & Optimization
 
-# CONBANEGA CORORPATI APP
+# 5. CONBANEGA CORORPATI APP
 Working of the Code:
 This program is a quiz game inspired by Kaun Banega Crorepati (KBC), where the player answers multiple-choice questions within a time limit of 10 seconds per question.
 
@@ -74,5 +74,43 @@ Improvements Needed:
 There's an issue in for i in list1, answer:—this should be replaced with a proper iteration over list1.
 The game should handle cases where the user doesn't enter a valid input.
 A timer mechanism should be added to ensure the user responds within 10 seconds, rather than just pausing execution.
+
+# 6. LUCKY GAME
+Working of the Lucky Game:
+This is a simple luck-based betting game where the player wagers money and tries to match symbols to win rewards. The game uses random selection to determine outcomes, simulating a slot-machine-style experience.
+
+How It Works:
+Starting Balance:
+
+The player starts with ₹50 in their wallet (balance=50).
+Game Start:
+
+The user is asked if they want to play ("y") or exit ("n").
+If they choose "y", another menu is displayed with game options.
+If they choose "n", the game ends.
+Game Menu Options:
+
+(1) Check Balance:
+Displays the current balance.
+If the balance is low, it suggests depositing money.
+(2) Exit the Game:
+Ends the game with a farewell message.
+(3) Deposit Money:
+The user can add money to their wallet.
+(4) Play the Game:
+The user enters a bet amount (amount1).
+If the bet is higher than the balance, a warning is displayed.
+If the bet is valid, the game randomly generates three symbols using the random.choice() function.
+Winning Conditions:
+
+Jackpot (Triple Match):
+If all three symbols match, the player wins double their bet.
+Close Win (Two Matches):
+If only two symbols match, the player loses their bet but gets a message that they were close.
+Total Loss (No Matches):
+If none of the symbols match, the player loses the bet.
+Game Loop:
+
+The game continues until the player chooses to exit (choice == 2).
 
 
