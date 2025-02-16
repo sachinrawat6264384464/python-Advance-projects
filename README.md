@@ -186,5 +186,49 @@ if-elif Conditions – Checks user commands and executes appropriate actions.
 count Variable – Keeps track of the number of tasks.
 enumerate() – Used for searching and updating task names.
 
+# 10. STUDENT GRADING SIMPLE PROJECT
+Working of the Student Grading System
+This project is a Student Grading System that allows users to enter student names and scores, assigns grades based on the scores, and calculates the class's average performance.
+
+How the System Works
+Class Definition (Student)
+
+Uses Object-Oriented Programming (OOP) to create a Student class.
+The __init__ method initializes student name, score, and grade.
+The display_info() method returns student details.
+Function (determine_grade)
+
+Determines the grade based on the student's score.
+Uses an if-elif-else structure for grading:
+A (90+)
+B (70-89)
+C (40-69)
+Fail (Below 40)
+Collecting Student Data (while True Loop)
+
+Continuously asks for student name and score.
+Creates a Student object and stores it in student_list.
+Asks whether to add another student (yes/no).
+If "no", the loop stops.
+Calculating Average Score (for Loop)
+
+Loops through student_list and sums up all student scores.
+Computes the average score by dividing the total by the number of students.
+Displaying Results
+
+Prints all student details using display_info().
+Displays the average score of the class.
+Uses another if-elif condition to evaluate class performance:
+90+ → Excellent Performance
+60-89 → Poor Performance
+Below 60 → Not Good Performance
+Concepts & Features Used
+✅ Object-Oriented Programming (OOP) – Class (Student), Objects, Methods
+✅ Functions – determine_grade(score) for grading logic
+✅ Loops – while loop for input collection, for loop for calculations
+✅ Conditional Statements – if-elif-else for grading and performance evaluation
+✅ List (student_list) – Stores multiple student objects
+✅ Basic Math Operations – Calculates total and average scores
+
 
 
