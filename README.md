@@ -1,7 +1,18 @@
 # python-Advance-projects
 # 1. DICE SEMULATION
- 
---> working: i am using we user time module and random module and two while loop one for play game or exit. other for paly game only  in this first turen or user and second turne of computer both of them i ma using user define function  and only user give command for stop the game computer will not give this is very intresting
+Working of the Game:
+I am using the time module and random module in this project. The game operates within two while loops:
+
+First Loop:
+Controls whether the player wants to play the game or exit.
+Second Loop:
+Handles the actual gameplay.
+The first turn is always for the user.
+The second turn is for the computer, which makes random moves using the random module.
+Additional Features:
+I am using user-defined functions to manage different parts of the game efficiently.
+Only the user can stop the game by giving a command—the computer will never stop on its own.
+This makes the game more interactive and engaging, providing an interesting experience for the player.
 # 2. HOTEL MANAGEMENT SYSTEM
 
 my project is a real-life Café Management System that uses Python and MySQL with the mysql.connector module. It interacts with a MySQL database to store and manage the café's menu, allowing customers to place orders and generate bills.
