@@ -112,5 +112,32 @@ If none of the symbols match, the player loses the bet.
 Game Loop:
 
 The game continues until the player chooses to exit (choice == 2).
+# 7. FILE MANAGER SYSTEM
+Working of the File Manager System
+This is a File Manager System in Python that allows users to create, read, write, delete, and edit files through a menu-based interface. It uses the os module for file management.
 
+🔹 Features & Working Explanation
+1️⃣ Create File (create_file(filename))
+
+If the file does not exist, it creates a new file.
+If the file already exists, it shows a warning.
+2️⃣ Read File (read_file(filename))
+
+Opens the file and displays its content.
+If the file does not exist, it shows an error message.
+3️⃣ Write to File (write_file(filename))
+
+Takes new input from the user and overwrites the existing file.
+If the file does not exist, it creates a new file.
+4️⃣ Delete File (delete_file(filename))
+
+Removes the specified file permanently.
+If the file does not exist, it shows an error.
+5️⃣ Edit (Append) File (edit_info(filename))
+
+Takes additional input from the user and appends it to the file.
+If the file does not exist, it shows an error.
+6️⃣ Exit (choice == 6)
+
+Stops the program execution.
 
