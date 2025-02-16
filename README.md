@@ -266,5 +266,30 @@ Concepts & Features Used
 ✅ Loops (while True) – Allows multiple password checks
 ✅ Conditional Statements (if-elif-else) – Checks password strength
 
+# 12. SPELLING CHECKER  SYSTEM
+# Working of the Spelling Checker (TextBlob)
+This project is a Spelling Checker using the TextBlob library. It helps correct spelling mistakes in user input.
+
+How the System Works
+User Input
+
+The user enters a word or sentence with possible spelling mistakes.
+Using TextBlob for Correction
+
+The function speling_check(leters) takes the input word and:
+✅ Uses TextBlob(leters).correct() to find the correct spelling.
+✅ If the spelling is already correct, it informs the user.
+✅ If the spelling is incorrect, it displays the corrected word.
+Displaying Results
+
+The corrected word is printed along with a message about whether it was correct or incorrect.
+Concepts & Features Used
+✅ TextBlob Library – Handles text analysis & spelling correction.
+✅ Functions (speling_check) – Encapsulates the logic for easy reuse.
+✅ Conditional Statements (if-else) – Compares original & corrected text.
+✅ User Input (input()) – Allows users to check different words.
+
+
+
 
 
