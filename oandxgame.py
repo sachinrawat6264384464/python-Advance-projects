@@ -1,39 +1,50 @@
+def printboard(board):
+    """Function to print the Tic-Tac-Toe board"""
+    print(f"  {board[0]}  |  {board[1]}  |  {board[2]}  ")
+    print("-----|-----|-----")
+    print(f"  {board[3]}  |  {board[4]}  |  {board[5]}  ")
+    print("-----|-----|-----")
+    print(f"  {board[6]}  |  {board[7]}  |  {board[8]}  ")
 
-def printboard(list1,list2):
-   zero='X' if list1[0] else('O' if list2[0] else 0)
-   one='X' if list1[1] else('O' if list2[1] else 1)
-   two='X' if list1[2] else('O' if list2[2] else 2)
-   three='X' if list1[3] else('O' if list2[3] else 3)
-   four='X' if list1[4] else('O' if list2[4] else 4)
-   five='X' if list1[5] else('O' if list2[5] else 5)
-   six='X' if list1[6] else('O' if list2[6] else 6)
-   seven='X' if list1[7] else('O' if list2[7] else 7)
-   eight='X' if list1[8] else('O' if list2[8] else 8)
-
-   print(f"  {zero}   |   {one}  |   {two} ")
-   print(f"------|------|-----")
-   print(f"  {three}   | {four}    |   {five} ")
-   print(f"------|------|-----")
-   print(f"  {six}   | {seven}    |   {eight} ")
+def check_winner(board, player):
+    """Function to check if a player has won"""
+    win_conditions = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Columns
+        [0, 4, 8], [2, 4, 6]  # Diagonals
+    ]
     
-   
-if __name__ == "__main__":  
- list1=[0,0,0,0,0,0,0,0,0,0]
- list2=[0,0,0,0,0,0,0,0,0,0]
- chance = 1
- while True:
-   printboard(list1,list2)
-   if chance == 1:
-      print(" X chance ")
-      user = int(input("enter the number = "))
-      list1[user] = "X"
-      chance = 1 - chance
-      print("")
-   else:
-     print(" O chance ")
-     user=int(input("enter the number = "))
-     list2[ user ] = "O"
-     chance= 0 + 1
-     print("")
-     
-     
+    for condition in win_conditions:
+        if all(board[i] == player for i in condition):
+            return True
+    return False
+
+if __name__ == "__main__":
+    board = ['0', '1', '2', '3', '4', '5', '6', '7', '8']  # Initial board
+    current_player = 'X'  # X always starts
+
+    for turn in range(9):  # Max 9 moves
+        printboard(board)
+        while True:
+            try:
+                move = int(input(f"Player {current_player}, enter your move (0-8): "))
+                if 0 <= move <= 8 and board[move] not in ['X', 'O']:
+                    board[move] = current_player
+                    break
+                else:
+                    print("❌ Invalid move! Choose an empty spot between 0-8.")
+            except ValueError:
+                print("❌ Invalid input! Enter a number between 0-8.")
+
+        # Check for a winner
+        if check_winner(board, current_player):
+            printboard(board)
+            print(f"🏆 Player {current_player} wins! 🏆")
+            break
+
+        # Switch player
+        current_player = 'O' if current_player == 'X' else 'X'
+
+    else:
+        printboard(board)
+        print("🤝 It's a Draw! 🤝")
