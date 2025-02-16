@@ -1,6 +1,6 @@
 # python-Advance-projects
 # 1. DICE SEMULATION
-Working of the Game:
+# Working of the Game:
 I am using the time module and random module in this project. The game operates within two while loops:
 
 First Loop:
@@ -25,11 +25,11 @@ How It Works:
 5.It simulates a real café environment, where waiters (referred to as "better" in the program) take orders and process payments.
 
 # 3. LIBRARY MANAGEMENT SYSTEM
---->working: This Python script implements a Library Management System that allows three types of users—teachers, students, and administrators—to log in and perform various tasks related to books. The system interacts with a MySQL database using the mysql.connector library and utilizes bcrypt for password hashing and authentication.
+# working: This Python script implements a Library Management System that allows three types of users—teachers, students, and administrators—to log in and perform various tasks related to books. The system interacts with a MySQL database using the mysql.connector library and utilizes bcrypt for password hashing and authentication.
 Main Components & Functionality:
 1. User Authentication & Role-Based Access. 2. Teacher Login & Operations. 3. Student Login & Operations. 4. Admin Login & Privileges. 5. Database Connectivity & Queries
 # 4. CONTACT APP
-Working of the Contact Diary App
+# Working of the Contact Diary App
 The Contact Diary App is a Python-based application that allows users to store, search, count, and delete contacts using a MySQL database. It provides a menu-driven interface for easy interaction and ensures that contacts are securely stored and managed.
 
 1️⃣ Database Connection and Table Creation
@@ -39,7 +39,7 @@ The Contact Diary App is a Python-based application that allows users to store, 
 3️⃣ Error Handling & Optimization
 
 # 5. CONBANEGA CORORPATI APP
-Working of the Code:
+# Working of the Code:
 This program is a quiz game inspired by Kaun Banega Crorepati (KBC), where the player answers multiple-choice questions within a time limit of 10 seconds per question.
 
 How It Works:
@@ -76,7 +76,7 @@ The game should handle cases where the user doesn't enter a valid input.
 A timer mechanism should be added to ensure the user responds within 10 seconds, rather than just pausing execution.
 
 # 6. LUCKY GAME
-Working of the Lucky Game:
+# Working of the Lucky Game:
 This is a simple luck-based betting game where the player wagers money and tries to match symbols to win rewards. The game uses random selection to determine outcomes, simulating a slot-machine-style experience.
 
 How It Works:
@@ -113,7 +113,7 @@ Game Loop:
 
 The game continues until the player chooses to exit (choice == 2).
 # 7. FILE MANAGER SYSTEM
-Working of the File Manager System
+# Working of the File Manager System
 This is a File Manager System in Python that allows users to create, read, write, delete, and edit files through a menu-based interface. It uses the os module for file management.
 
 🔹 Features & Working Explanation
@@ -142,7 +142,7 @@ If the file does not exist, it shows an error.
 Stops the program execution.
 
 # 8. Tic-Tac-Toe
-Working of the Game
+# Working of the Game
 This is a two-player Tic-Tac-Toe game where Player X and Player O take turns to place their marks on a 3x3 grid. The game runs until:
 ✅ A player wins by forming a row, column, or diagonal.
 🔄 It's a draw (when all 9 positions are filled and no one wins).
@@ -154,5 +154,37 @@ check_winner() function – Checks if a player has won.
 valid_move() function – Ensures a move is valid and prevents overwriting.
 Loop for turns – Alternates between Player X and Player O.
 Win/Draw condition handling – Stops the game if someone wins or if it's a draw.
+
+# 9. TOO DO LIST SYSTEM
+# Working of the To-Do List Using MySQL Database
+This is a task management system where users can create, add, update, delete, and view tasks. The system uses a MySQL database to store and manage tasks efficiently.
+
+How the System Works
+Database Connection – Connects to a MySQL database (library_system) using the mysql.connector module.
+Table Creation (Optional) – Creates a table task_info (if uncommented) with t_name (task name) and t_status (task status).
+Menu-Based System – Uses a while loop to display options:
+Create Tasks (1) – Users can create and add multiple tasks at once.
+Add New Tasks (2) – Allows adding more tasks to the list.
+Update Tasks (3) – Users can rename an existing task.
+Delete Tasks (4) – Removes tasks from the list.
+Show Tasks (5) – Displays all tasks stored in the system.
+Exit System (6) – Stops the program and closes the database connection.
+Loop & Input Handling – Ensures users provide valid inputs for task operations.
+Task Storage – Uses a list (task_list) to temporarily store tasks before interacting with the database.
+What’s Used in the System?
+1. Modules:
+mysql.connector – To connect and interact with MySQL.
+mydb.cursor() – Executes SQL queries.
+mydb.commit() – Saves changes in the database.
+2. SQL Queries (Commented in Code):
+CREATE TABLE task_info (t_name VARCHAR(20), t_status VARCHAR(20)); – Creates the table.
+(Queries for inserting, updating, deleting, and fetching tasks can be added for full MySQL integration.)
+3. Features & Logic:
+task_list[] (Python List) – Temporarily stores tasks for quick access.
+while True (Looping Mechanism) – Ensures the menu runs continuously.
+if-elif Conditions – Checks user commands and executes appropriate actions.
+count Variable – Keeps track of the number of tasks.
+enumerate() – Used for searching and updating task names.
+
 
 
