@@ -187,7 +187,7 @@ count Variable – Keeps track of the number of tasks.
 enumerate() – Used for searching and updating task names.
 
 # 10. STUDENT GRADING SIMPLE PROJECT
-Working of the Student Grading System
+# Working of the Student Grading System
 This project is a Student Grading System that allows users to enter student names and scores, assigns grades based on the scores, and calculates the class's average performance.
 
 How the System Works
@@ -229,6 +229,42 @@ Concepts & Features Used
 ✅ Conditional Statements – if-elif-else for grading and performance evaluation
 ✅ List (student_list) – Stores multiple student objects
 ✅ Basic Math Operations – Calculates total and average scores
+
+# 11. PASSWORD CHECKER SYSTEM
+# Working of Password Strength Checker (Regex Library)
+This project is a Password Strength Checker using Python's re (regex) module. It evaluates passwords based on different conditions to determine their strength.
+
+How the System Works
+User Selects Condition Type
+
+The user is given two options:
+1 → Medium-hard password check
+2 → Simple password check
+If an invalid choice is entered, an error message is displayed.
+Medium-Hard Password Check (command == 1)
+
+The function check_password(password) verifies the password based on the following conditions:
+✅ At least 8 characters long
+✅ Contains at least one digit (0-9)
+✅ Contains at least one uppercase letter (A-Z)
+✅ Contains at least one lowercase letter (a-z)
+✅ Contains at least one special character (~!@#$%^&*()_?><,.-)
+If any condition fails, a message is displayed.
+If all conditions pass, the password is considered "strong".
+Simple Password Check (command == 2)
+
+A basic version of the password checker:
+Uses the same conditions but combines them into a single if condition.
+If the password does not meet all criteria, the user is told to strengthen it.
+Loop for Continuous Checking
+
+Users can enter multiple passwords for checking.
+Entering "exit" stops the program.
+Concepts & Features Used
+✅ Regex (re library) – Used for pattern matching (special characters)
+✅ Functions (check_password, check_passw) – Code reusability
+✅ Loops (while True) – Allows multiple password checks
+✅ Conditional Statements (if-elif-else) – Checks password strength
 
 
 
